@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import C1 from './components/C1';
 import './App.css';
 
 function App() {
+  const colors=[
+    {backgroundColor:'red'},
+    {backgroundColor:'blue'},
+    {backgroundColor:'green'},
+    {backgroundColor:'yellow'},
+    {backgroundColor:'pink'},
+    {backgroundColor:'brown'},
+    {backgroundColor:'darkblue'},
+    {backgroundColor:'darkgreen'},
+    {backgroundColor:'aqua'},
+    {backgroundColor:'gray'},
+    {backgroundColor:'orange'},
+    {backgroundColor:'purple'}
+  ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <C1 colors={colors}></C1>
     </div>
   );
 }
